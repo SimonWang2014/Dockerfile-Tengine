@@ -1,5 +1,5 @@
 
-FROM wangh/ssh:latest
+FROM ubuntu:latest
 
 MAINTAINER wangh<wanghui94@live.com>
 

@@ -3,6 +3,8 @@ FROM ubuntu:latest
 
 MAINTAINER wangh<wanghui94@live.com>
 
+RUN apr-get update
+
 # 安装编译环境
 RUN apt-get install -y build-essential debhelper make autoconf automake patch 
 RUN apt-get install -y dpkg-dev fakeroot pbuilder gnupg dh-make libssl-dev libpcre3-dev git-core

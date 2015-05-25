@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 MAINTAINER wangh<wanghui94@live.com>
 
-RUN apr-get update
+RUN apt-get update
 
 # 安装编译环境
 RUN apt-get install -y build-essential debhelper make autoconf automake patch 

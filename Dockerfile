@@ -28,7 +28,9 @@ ENV DEB_BUILD_OPTIONS nocheck
 RUN su nginx -c 'dpkg-buildpackage -rfakeroot -uc -b'
 
 WORKDIR /home/nginx
-RUN dpkg -i tengine_2.1.0-1_amd64.deb
+
+#适配所有版本
+RUN dpkg -i tengine*.deb
 
 VOLUME [ "/data", "/etc/nginx/sites-enabled", "/var/log/nginx" ]
 
